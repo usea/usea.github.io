@@ -12,10 +12,6 @@ useaApp.config(['$routeProvider','$locationProvider',function ($routeProvider,$l
             templateUrl: 'pages/partials/index.html',
             controller: 'RouteListCtl'
         })
-        .when('/index', {
-            templateUrl: 'pages/partials/index.html',
-            controller: 'RouteListCtl'
-        })
         .otherwise({
             redirectTo: '/'
         });
