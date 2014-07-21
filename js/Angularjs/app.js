@@ -16,6 +16,22 @@ useaApp.config(['$routeProvider','$locationProvider',function ($routeProvider,$l
             templateUrl: 'pages/partials/index.html',
             controller: 'RouteListCtl'
         })
+        .when('/widgets', {
+            templateUrl: 'pages/widgets.html',
+            controller: 'RouteListCtl'
+        })
+        .when('/charts/morris', {
+            templateUrl: 'pages/charts/morris.html',
+            controller: 'RouteListCtl'
+        })
+        .when('/charts/flot', {
+            templateUrl: 'pages/charts/flot.html',
+            controller: 'RouteListCtl'
+        })
+        .when('/charts/inline', {
+            templateUrl: 'pages/charts/inline.html',
+            controller: 'RouteListCtl'
+        })
         .otherwise({
             redirectTo: '/'
         });
